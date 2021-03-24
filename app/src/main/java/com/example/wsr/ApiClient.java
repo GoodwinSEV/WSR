@@ -6,7 +6,9 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
-    private static Retrofit getRetrofit(){
+    public static Retrofit getRetrofit(){
+
+        //Перехватчик логов ответов от сервера, последний успешный логин
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
         httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
 
@@ -16,7 +18,7 @@ public class ApiClient {
 
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("http://api.larntech.net/")
+                .baseUrl("http://cars.areas.su/")
                 .client(okHttpClient)
                 .build();
         return retrofit;

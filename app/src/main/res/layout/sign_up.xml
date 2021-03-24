@@ -46,7 +46,7 @@
             app:srcCompat="@drawable/border" />
 
         <EditText
-            android:id="@+id/editLoginSignUp"
+            android:id="@+id/edUserName"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="1dp"
@@ -109,7 +109,7 @@
             app:srcCompat="@drawable/border" />
 
         <EditText
-            android:id="@+id/editMailSignUp"
+            android:id="@+id/edEmail"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="1dp"
@@ -173,7 +173,7 @@
             app:srcCompat="@drawable/border" />
 
         <EditText
-            android:id="@+id/editPasswordSignUp"
+            android:id="@+id/edPassword"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="1dp"
@@ -236,7 +236,7 @@
             app:srcCompat="@drawable/border" />
 
         <EditText
-            android:id="@+id/editRePasswordSignUp"
+            android:id="@+id/edRePassword"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginStart="1dp"
