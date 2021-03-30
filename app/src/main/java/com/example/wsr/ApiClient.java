@@ -18,7 +18,7 @@ public class ApiClient {
 
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("http://cars.areas.su/")
+                .baseUrl("http://cinema.areas.su/")
                 .client(okHttpClient)
                 .build();
         return retrofit;

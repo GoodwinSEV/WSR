@@ -55,8 +55,9 @@ public class LoginActivity extends AppCompatActivity {
     }
     public void login(){
         LoginRequest loginRequest = new LoginRequest();
-        loginRequest.setUsername(username.getText().toString());
+        loginRequest.setEmail(username.getText().toString());
         loginRequest.setPassword(password.getText().toString());
+
         Call<LoginResponce> loginResponseCall = ApiClient.getUserService().Userlogin(loginRequest);
         loginResponseCall.enqueue(new Callback<LoginResponce>() {
             @Override
@@ -64,7 +65,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (response.isSuccessful() ){
                     Toast.makeText(LoginActivity.this,"Login Successful", Toast.LENGTH_LONG).show();
                 }else{
-                    Toast.makeText(LoginActivity.this,"Login Failed", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this,"WHY???", Toast.LENGTH_LONG).show();
                 }
             }
 

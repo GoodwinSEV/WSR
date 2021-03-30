@@ -1,22 +1,13 @@
 package com.example.wsr;
 
 public class LoginResponce {
-    private String password;
-    private String username;
+    private int token;
 
-    public String getPassword() {
-        return password;
+    public int getToken() {
+        return token;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
+    public void setToken(int token) {
+        this.token = token;
     }
 }
